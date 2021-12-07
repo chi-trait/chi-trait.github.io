@@ -1,0 +1,21 @@
+@import "../sass/colors";
+
+.landing {
+  background-color: $grey400;
+  padding: 5rem 2rem 15rem 1rem;
+  height: 10rem;
+  .landing-title {
+    font-size: 4rem;
+    color: $white;
+    font-weight: bold;
+  }
+  .landing-description {
+    font-size: 2rem;
+    color: $white;
+    padding: 0px;
+    margin: 0px;
+    .img {
+      height: 4rem;
+    }
+  }
+}

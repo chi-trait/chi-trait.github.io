@@ -1,0 +1,24 @@
+@import "../sass/colors";
+
+.app-main {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  .title {
+    padding: 5px;
+    margin: 10px 10px 10px 10px;
+    font-size: 23px;
+    color: $primary-color;
+    font-weight: bolder;
+    border-bottom: $grey200 solid 1px;
+  }
+  .section {
+    max-width: calc(min(2000px, 100vw - 100px));
+    //margin: 50px;
+    margin-top: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 5px;
+  }
+}

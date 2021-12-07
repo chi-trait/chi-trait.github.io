@@ -1,0 +1,21 @@
+@import "../sass/colors";
+
+.committee-list {
+  //overflow: auto;
+  //max-height: 400px;
+  padding: 10px 30px;
+  .member {
+    display: flex;
+    margin: 0px 4px;
+    .name {
+      color: $grey900;
+      margin-bottom: 0.5rem;
+    }
+    .affiliation {
+      color: $grey600;
+      margin-left: 10px;
+      font-style: italic;
+      //font-size: 14px;
+    }
+  }
+}
