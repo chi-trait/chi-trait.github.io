@@ -121,14 +121,14 @@ const cfp: CFP = {
 const pcs = [
   { name: "Ben Shneiderman", affiliation: "University of Maryland" },
   { name: "Elena Glassman", affiliation: "Harvard" },
-  { name: "Jenn Wortman", affiliation: "MSR" },
+  { name: "Jenn Wortman Vaughan", affiliation: "Microsoft Research" },
   { name: "Krzystof Gajos", affiliation: "Harvard" },
   { name: "Matthew Kay", affiliation: "Northwestern" },
   { name: "Tim Miller", affiliation: "University of Melbourne" },
   { name: "Alon Jacovi", affiliation: "Bar Ilan University" },
   { name: "Maria De-Arteaga", affiliation: "UT Austin" },
   { name: "Vera Liao", affiliation: "MSR" },
-  { name: "Hal Daume", affiliation: "University of Maryland" },
+  { name: "Hal Daume III", affiliation: "University of Maryland" },
   { name: "Gonzalo Ramos", affiliation: "MSR" },
   { name: "Michael Terry", affiliation: "Google" },
 
