@@ -1,0 +1,20 @@
+@import "../sass/colors";
+
+.about-div {
+  padding: 10px 30px;
+
+  .dates {
+    //margin: auto;
+    text-align: center;
+    .col {
+      background-color: $grey100;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .col-key {
+      color: $primary-color;
+      font-size: larger;
+      font-weight: 600;
+    }
+  }
+}

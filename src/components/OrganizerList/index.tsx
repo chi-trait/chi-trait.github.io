@@ -42,12 +42,7 @@ const OrganizerList = ({
   organizers: Organizer[];
 }): ReactElement => {
   return (
-    <Grid
-      container
-      spacing={3}
-      id={PageIds.Organizers}
-      className="organizer-list"
-    >
+    <Grid container spacing={3} className="organizer-list">
       {organizers.map((organizer: Organizer) => (
         <Grid item lg={3} md={3} sm={3} xs={12} key={organizer.name}>
           <OrganizerEntry organizer={organizer} />

@@ -4,11 +4,14 @@
   margin: auto;
   margin-top: 0px;
   margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
 
   .title {
-    padding: 5px;
+    padding: 10px;
     margin: 10px 10px 10px 10px;
-    font-size: 23px;
+    font-size: 30px;
+    //text-align: center;
     color: $primary-color;
     font-weight: bolder;
     border-bottom: $grey200 solid 1px;
@@ -16,9 +19,15 @@
   .section {
     max-width: calc(min(2000px, 100vw - 100px));
     //margin: 50px;
-    margin-top: 30px;
-
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    width: 100%;
+    margin: auto;
+    > * {
+      //max-width: calc(min(2000px, 100vw - 100px));
+      margin: auto;
+    }
+    background-color: white;
+    margin-top: 40px;
+    //border: 1px solid rgba(0, 0, 0, 0.12);
     padding: 5px;
   }
 }

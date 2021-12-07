@@ -4,7 +4,8 @@ const overview: Overview = {
   acronym: "TRAIT",
   year: "2022",
   fullName: "Workshop on Trust and Reliance in AI-Human Teams",
-  description: "",
+  description:
+    "As humans increasingly interact (and even collaborate) with AI systems during decision-making, creative exercises, and other tasks,appropriatetrust and reliance are necessary to ensure proper usage and adoption of these systems. Specifically, people shouldunderstand when to trust or rely on an algorithm’s outputs and when to override them. While significant research focus has aimedto measure and promote trust in human-AI interaction, the field lacks synthesized definitions and understanding of results acrosscontexts. Indeed, conceptualizing trust and reliance, and identifying the best ways to measure these constructs and effectively shapethem in human-AI interactions remains a challenge.This workshop aims to establish building appropriate trust and reliance on (imperfect) AI systems as a vital, yet under-exploredresearch problem. The workshop will provide a venue for exploring three broad aspects related to human-AI trust: (1) How do weclarify definitions and frameworks relevant to human-AI trust and reliance (e.g., what does trust mean in different contexts)? (2) Howdo wemeasuretrust and reliance? And, (3) How do weshapetrust and reliance? As these problems and solutions involving humansand AI are interdisciplinary in nature, we invite participants with expertise in HCI, AI, ML, psychology, and social science, or otherrelevant fields to foster closer communications and collaboration between multiple communities.",
   backgroundImg: "chi2022-background.png",
   confLogoImg: "chi2022.png",
   confName: "CHI",
