@@ -203,14 +203,10 @@ const pcs = [
   { name: "Brian Lim", affiliation: "National University of Singapore" },
   { name: "Tim Miller", affiliation: "University of Melbourne" },
   { name: "Gonzalo Ramos", affiliation: "Microsoft Research" },
-
+  { name: "Jenn Wortman Vaughan", affiliation: "Microsoft Research" },
   { name: "Ben Shneiderman", affiliation: "University of Maryland" },
   { name: "Tom Williams", affiliation: "Colorado School of Mines" },
-
-  { name: "Jenn Wortman Vaughan", affiliation: "Microsoft Research" },
-
   { name: "Michael Terry", affiliation: "Google Research" },
-
   { name: "Ming Yin", affiliation: "Purdue University" },
 ];
 
@@ -276,8 +272,7 @@ const speakers = [
     webpage: "https://directory.engr.wisc.edu/ie/Faculty/Lee_John/",
     img: "john_lee.png",
     description:
-      "John is the Emerson Electric Quality & Productivity Professor in Mechanical Engineering at the University of Wisconsin-Madison. " +
-      "His research focuses on the safety and acceptance of complex human-machine systems by considering how technology mediates attention. This research is grounded in conceptual and computational models of human-technology interaction. Applications include trust in technology, tele-health, advanced driver assistance systems, and driver distraction.",
+      "Dr. John D. Lee is the Emerson Electric Professor at the University of Wisconsin-Madison. He investigates the issues of human-automation interaction, particularly trust in automation. John has investigated trust in domains that include UAVs, maritime operations, highly automated vehicles, and deep space exploration. His work also involves assessing interface and interaction methods to enhance trust calibration, as well as statistical approaches to assess trust and user state estimation. He helped to edit the Handbook of Cognitive Engineering, the APA Handbook of Human Systems Integration, and is also a co-author of a popular textbook: Designing for People: An introduction to human factors engineering. This research has been funded by NSF, ONR, NHTSA, NASA, Nissan, Toyota, and GM.",
   },
 ];
 
