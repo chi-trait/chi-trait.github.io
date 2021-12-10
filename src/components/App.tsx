@@ -2,7 +2,7 @@ import { ReactElement, useState } from "react";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { grey, orange, pink, yellow } from "@material-ui/core/colors";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./styles.scss";
 
@@ -81,12 +81,26 @@ const App = (): ReactElement => {
               exact
               render={() => <Main meta={Info2022} types={["schedule"]} />}
             />
-            <Route path="/">
-              <Main
-                meta={Info2022}
-                types={["about", "organizers", "committee"]}
-              />
-            </Route>
+            <Route
+              path="/about"
+              exact
+              render={() => (
+                <Main
+                  meta={Info2022}
+                  types={["about", "organizers", "committee"]}
+                />
+              )}
+            />
+            <Route
+              path="/"
+              exact
+              render={() => (
+                <Main
+                  meta={Info2022}
+                  types={["about", "organizers", "committee"]}
+                />
+              )}
+            />
           </Switch>
           <Footer contact={Info2022.overview.contact} />
         </div>
