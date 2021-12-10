@@ -189,7 +189,7 @@ const pcs = [
   { name: "Michael Bernstein", affiliation: "Stanford University" },
 
   { name: "Erin Chiou", affiliation: "ASU Adapt Lab" },
-  { name: "Hal Daume", affiliation: "University of Maryland" },
+  { name: "Hal Daume III", affiliation: "University of Maryland" },
   { name: "Maria De-Arteaga", affiliation: "UT Austin" },
 
   { name: "Krzystof Gajos", affiliation: "Harvard University" },
@@ -207,7 +207,7 @@ const pcs = [
   { name: "Ben Shneiderman", affiliation: "University of Maryland" },
   { name: "Tom Williams", affiliation: "Colorado School of Mines" },
 
-  { name: "Jenn Wortman", affiliation: "Microsoft Research" },
+  { name: "Jenn Wortman Vaughan", affiliation: "Microsoft Research" },
 
   { name: "Michael Terry", affiliation: "Google Research" },
 
