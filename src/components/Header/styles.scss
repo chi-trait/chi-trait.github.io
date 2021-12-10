@@ -14,10 +14,12 @@
   z-index: 1000;
 
   .logo {
-    margin-top: 10px;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    height: 60px;
+  }
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   h1 {
@@ -46,6 +48,7 @@
     color: $grey200;
     display: flex;
     font-weight: 500;
+    font-weight: bold;
     padding: 0 20px;
     line-height: $header-height;
     text-decoration: none;

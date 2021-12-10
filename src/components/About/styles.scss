@@ -8,13 +8,25 @@
     text-align: center;
     .col {
       background-color: $grey100;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 100%;
     }
     .col-key {
-      color: $primary-color;
-      font-size: larger;
+      color: $grey700;
+      text-transform: uppercase;
+      font-size: 25px;
       font-weight: 600;
     }
+    .col-value {
+      color: $primary-color;
+
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+  .description {
+    margin-top: 20px;
+    font-size: 20px;
   }
 }

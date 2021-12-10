@@ -8,21 +8,26 @@ const LandingDiv = ({ overview }: { overview: Overview }): ReactElement => {
   return (
     <>
       <div
-        style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/${overview.backgroundImg})`,
-        }}
+        style={
+          {
+            //backgroundImage: `url(${process.env.PUBLIC_URL}/images/${overview.backgroundImg})`,
+          }
+        }
         className="landing"
       >
         <div className="landing-title">
-          {overview.acronym} {overview.year}
+          <img
+            className="landing-logo"
+            src={`${process.env.PUBLIC_URL}/images/${overview.logoWithWord}`}
+          ></img>{" "}
+          <p className="landing-description">
+            <b>{overview.fullName}</b>, at {overview.confName} {overview.year}
+          </p>
         </div>
-        <p className="landing-description">
-          <b>{overview.fullName}</b>, at {overview.confName} {overview.year}
-          {/*<img
+        <img
           className="img"
-          src={`${process.env.PUBLIC_URL}/images/${overview.confLogoImg}`}
-        />*/}
-        </p>
+          src={`${process.env.PUBLIC_URL}/images/${overview.backgroundImg}`}
+        />
       </div>
     </>
   );

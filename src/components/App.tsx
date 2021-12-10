@@ -8,6 +8,8 @@ import "./styles.scss";
 
 import Header from "./Header";
 import Main from "./Main";
+import Footer from "./Footer";
+
 import { Info2022 } from "../stores/Info2022";
 
 //import {store } from '../stores/Database';
@@ -67,16 +69,26 @@ const App = (): ReactElement => {
     <ThemeProvider theme={theme}>
       <Router>
         <div className="app">
-          <Header />
+          <Header logo={Info2022.overview.logoImg} />
           <Switch>
+            <Route
+              path="/cfp"
+              exact
+              render={() => <Main meta={Info2022} types={["cfp"]} />}
+            />
+            <Route
+              path="/schedule"
+              exact
+              render={() => <Main meta={Info2022} types={["schedule"]} />}
+            />
             <Route path="/">
-              <Main meta={Info2022} />
-            </Route>
-            <Route path="/2022">
-              <Main meta={Info2022} />
+              <Main
+                meta={Info2022}
+                types={["about", "organizers", "committee"]}
+              />
             </Route>
           </Switch>
-          {/* <Footer /> */}
+          <Footer contact={Info2022.overview.contact} />
         </div>
       </Router>
     </ThemeProvider>

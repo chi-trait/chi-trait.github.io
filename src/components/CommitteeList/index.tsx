@@ -1,6 +1,6 @@
 import { Grid, Avatar } from "@material-ui/core";
 import React, { ReactElement } from "react";
-import { Organizer, PageIds, ProgramCommittee } from "../../stores/Interfaces";
+import { ProgramCommittee } from "../../stores/Interfaces";
 
 import "./styles.scss";
 const CommmitteeList = ({

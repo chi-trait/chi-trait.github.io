@@ -1,15 +1,11 @@
 import { Grid, Avatar } from "@material-ui/core";
 import React, { ReactElement } from "react";
-import { Organizer, PageIds } from "../../stores/Interfaces";
+import { People, PageIds } from "../../stores/Interfaces";
 
 import "./styles.scss";
 import clsx from "clsx";
 
-const OrganizerEntry = ({
-  organizer,
-}: {
-  organizer: Organizer;
-}): ReactElement => {
+const OrganizerEntry = ({ organizer }: { organizer: People }): ReactElement => {
   const [isSeeDescription, setIsSeeDescription] = React.useState(false);
   return (
     <a
@@ -39,11 +35,11 @@ const OrganizerEntry = ({
 const OrganizerList = ({
   organizers,
 }: {
-  organizers: Organizer[];
+  organizers: People[];
 }): ReactElement => {
   return (
     <Grid container spacing={3} className="organizer-list">
-      {organizers.map((organizer: Organizer) => (
+      {organizers.map((organizer: People) => (
         <Grid item lg={3} md={3} sm={3} xs={12} key={organizer.name}>
           <OrganizerEntry organizer={organizer} />
         </Grid>

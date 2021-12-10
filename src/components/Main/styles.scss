@@ -3,7 +3,7 @@
 .app-main {
   margin: auto;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   margin-left: 0px;
   margin-right: 0px;
 
@@ -17,7 +17,7 @@
     border-bottom: $grey200 solid 1px;
   }
   .section {
-    max-width: calc(min(2000px, 100vw - 100px));
+    max-width: calc(100vw - min(10vw, 100px));
     //margin: 50px;
     width: 100%;
     margin: auto;

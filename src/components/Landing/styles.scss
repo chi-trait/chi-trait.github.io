@@ -1,21 +1,41 @@
 @import "../sass/colors";
 
 .landing {
-  background-color: $grey400;
-  padding: 5rem 2rem 15rem 1rem;
-  height: 10rem;
+  $height: 300px;
+  background-color: $white;
+  background-size: cover;
+  position: relative;
+  padding: 300px 1rem 0rem 3rem;
+  height: $height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  .img {
+    text-align: right;
+    height: $height;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
   .landing-title {
-    font-size: 4rem;
-    color: $white;
-    font-weight: bold;
+    margin-top: -10px;
+    z-index: 10;
+    position: absolute;
+    top: 30px;
+    //height: 100%;
+  }
+  .landing-logo {
+    width: calc(min(80%, 500px));
+    filter: drop-shadow(0px 0px 10px white);
+  }
+  .landing-background {
+    font-weight: 50%;
   }
   .landing-description {
     font-size: 2rem;
-    color: $white;
     padding: 0px;
-    margin: 0px;
-    .img {
-      height: 4rem;
-    }
+    margin-top: -30px;
+    color: $grey600;
   }
 }

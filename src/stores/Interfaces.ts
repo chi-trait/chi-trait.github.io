@@ -1,16 +1,12 @@
 import { ReactElement } from "react";
 
 export enum PageIds {
-  Schedule = "Schedule",
-
-  CFP = "Call for Papers",
-
+  about = "About",
+  cfp = "Call for Papers",
   //Speakers = "Speakers",
-  Organizers = "Organizers",
-
-  committee = "Program Committee",
+  schedule = "Schedule",
 }
-export interface Organizer {
+export interface People {
   name: string;
   description: string;
   img: string;
@@ -31,11 +27,7 @@ export interface CFP {
       name: string;
       url: string;
     };
-    format: string;
-    template: {
-      name: string;
-      url: string;
-    };
+    format: string | ReactElement;
     type: string;
   };
 }
@@ -53,18 +45,22 @@ export interface Schedule {
 }
 
 export interface Overview {
+  contact: string;
   acronym: string;
   year: string;
-  description: string;
+  description: string | ReactElement;
   fullName: string;
   backgroundImg: string;
   confLogoImg: string;
+  logoImg: string;
+  logoWithWord: string;
   confName: string;
 }
 
 export interface Metadata {
   overview: Overview;
-  organizers: Organizer[];
+  organizers: People[];
+  speakers: People[];
   cfp: CFP;
   pcs: ProgramCommittee[];
   schedule: Schedule[];

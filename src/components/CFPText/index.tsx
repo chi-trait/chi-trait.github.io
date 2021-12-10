@@ -34,12 +34,6 @@ const CFPText = ({ cfp }: { cfp: CFP }): ReactElement => {
               </a>
             </div>
             <div className="row">
-              <div className="row-key">Template</div>
-              <a className="row-value" href={cfp.submit.template.url}>
-                {cfp.submit.template.name}
-              </a>
-            </div>
-            <div className="row">
               <div className="row-key">Format</div>
               <div className="row-value">{cfp.submit.format}</div>
             </div>{" "}
