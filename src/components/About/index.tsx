@@ -16,19 +16,24 @@ const AboutDiv = ({
     <>
       <div className="about-div">
         <Grid container spacing={3} className="dates">
-          {cfp.dates.map((date, i) => (
-            <Grid item md={3} sm={6} xs={12} key={i}>
-              <div className="col">
-                <span className="col-key">{date.type}</span>
-                <div className="col-value">{date.date}</div>
-              </div>
-            </Grid>
-          ))}
+          {cfp.dates.map((date, i) => {
+            if (date.type === "Camera ready") {
+              return null;
+            }
+            return (
+              <Grid item md={3} sm={6} xs={12} key={i}>
+                <div className="col">
+                  <span className="col-key">{date.type}</span>
+                  <div className="col-value">{date.date}</div>
+                </div>
+              </Grid>
+            );
+          })}
           <Grid item md={3} sm={6} xs={12}>
             <div className="col">
               <span className="col-key">contact</span>
               <div className="col-value">
-                <Email fontSize="small" color="primary" />{" "}
+                <Email className="icon" fontSize="small" color="primary" />{" "}
                 <a href={`mailto:${overview.contact}`}>{overview.contact}</a>
               </div>
             </div>

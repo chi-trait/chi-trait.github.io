@@ -12,8 +12,8 @@ const CommmitteeList = ({
     <div className="committee-list">
       {members.map((member, index) => (
         <div className="member" key={member.name}>
-          <div className="name">{member.name}</div>
-          <div className="affiliation">{member.affiliation}</div>
+          <span className="name">{member.name}</span>
+          <span className="affiliation">{member.affiliation}</span>
         </div>
       ))}
     </div>

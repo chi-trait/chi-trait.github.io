@@ -35,7 +35,10 @@
     .row-key {
       font-weight: bold;
       color: $grey800;
-      width: 90px;
+      width: 60px;
+      &.long {
+        width: 150px;
+      }
       //text-transform: uppercase;
     }
     .row-value {

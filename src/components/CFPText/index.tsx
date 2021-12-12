@@ -14,7 +14,7 @@ const CFPText = ({ cfp }: { cfp: CFP }): ReactElement => {
             {cfp.dates.map((date, i) => (
               <div key={i}>
                 <div className="row">
-                  <div className="row-key">{date.type}</div>
+                  <div className="row-key long">{date.type}</div>
                   <div className="row-value">{date.date}</div>
                 </div>
                 {date.description && (

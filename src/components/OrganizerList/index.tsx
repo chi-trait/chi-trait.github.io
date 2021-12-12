@@ -4,17 +4,32 @@ import { People, PageIds } from "../../stores/Interfaces";
 
 import "./styles.scss";
 import clsx from "clsx";
+import { Language, Twitter, Web } from "@material-ui/icons";
 
 const OrganizerEntry = ({ organizer }: { organizer: People }): ReactElement => {
   const [isSeeDescription, setIsSeeDescription] = React.useState(false);
+  const icons = (
+    <>
+      {organizer.webpage && (
+        <a href={organizer.webpage}>
+          <Language className="iconlink" color="primary" fontSize="small" />
+        </a>
+      )}
+      {organizer.webpage && (
+        <a href={organizer.webpage}>
+          <Twitter className="iconlink" color="primary" fontSize="small" />
+        </a>
+      )}
+    </>
+  );
   return (
-    <a
-      href={organizer.webpage}
-      className="entry"
+    <div
+      //href={organizer.webpage}
       onMouseOut={() => setIsSeeDescription(false)}
       onMouseOver={() => {
         setIsSeeDescription(true);
       }}
+      className="entry"
     >
       <Avatar
         className="avatar"
@@ -23,12 +38,14 @@ const OrganizerEntry = ({ organizer }: { organizer: People }): ReactElement => {
       />
       <div>
         <div className={clsx("description", { visible: isSeeDescription })}>
+          <div>{icons}</div>
+
           {organizer.description}
         </div>
         <div className="name">{organizer.name}</div>
         <div className="affiliation">{organizer.affliation}</div>
       </div>
-    </a>
+    </div>
   );
 };
 

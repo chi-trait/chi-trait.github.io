@@ -12,6 +12,7 @@ export interface People {
   img: string;
   webpage: string;
   affliation: string;
+  twitter?: string;
 }
 
 export interface CFP {
@@ -20,7 +21,7 @@ export interface CFP {
   dates: {
     description?: string;
     date: string | ReactElement;
-    type: "submission" | "notification" | "workshop";
+    type: "Submission" | "Notification" | "Camera ready" | "Workshop";
   }[];
   submit: {
     platform: {

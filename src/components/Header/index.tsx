@@ -58,17 +58,26 @@ const Header = ({ logo }: { logo: string }): ReactElement => {
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{ vertical: "top", horizontal: "right" }}
       id={mobileMenuId}
-      keepMounted
+      keepMounted={false}
       transformOrigin={{ vertical: "top", horizontal: "right" }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
       {Object.keys(PageIds).map((key) => (
-        <MenuItem key={key} className="menu-option">
-          <NavLink exact to={`/${key}`}>
+        <NavLink
+          className="menu-option"
+          exact
+          to={`/${key}`}
+          onClick={handleMobileMenuClose}
+        >
+          <MenuItem
+            key={key}
+
+            //onClick={handleMobileMenuClose}
+          >
             {PageIds[key as keyof typeof PageIds]}
-          </NavLink>
-        </MenuItem>
+          </MenuItem>
+        </NavLink>
       ))}
     </Menu>
   );

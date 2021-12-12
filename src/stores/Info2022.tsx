@@ -69,6 +69,7 @@ const organizers: People[] = [
     affliation: "University of Washington",
     webpage: "https://homes.cs.washington.edu/~bansalg/",
     img: "gagan.png",
+    twitter: "https://twitter.com/bansalg_",
     description:
       "Gagan is a Ph.D. candidate in the Allen School of Computer Science and Engineering at the University of Washington, Seattle. He is part of the UW Lab for Human-AI Interaction and conducts interdisciplinary research on Artificial Intelligence and Human-Computer Interaction with focus on developing human-centered AI systems for augmenting people.",
   },
@@ -76,6 +77,7 @@ const organizers: People[] = [
     name: "Alison Smith-Renner",
     affliation: "Dataminr",
     webpage: "https://alisonmsmith.github.io/",
+    twitter: "https://twitter.com/alison_m_smith",
     img: "alison.png",
     description:
       "Alison is a Senior Research Scientist at Dataminr. Her research interests lie at the intersection of AI and HCI, focusing on transparency and control for human-in-the-loop systems to engender appropriate trust and improve human performance. Alison received her Ph.D. from the University of Maryland, College Park. She has organized various workshops on explainable AI and human-centered ML, including at IUI, CHI, and TEI, and she has held senior committee roles at IUI.",
@@ -83,6 +85,7 @@ const organizers: People[] = [
   {
     name: "Zana Buçinca",
     affliation: "Harvard University",
+    twitter: "https://twitter.com/ZanaBucinca",
     webpage: "https://hci.seas.harvard.edu/people/zana-bu%C3%A7inca",
     img: "zana.png",
     description:
@@ -90,6 +93,7 @@ const organizers: People[] = [
   },
   {
     name: "Tongshuang (Sherry) Wu",
+    twitter: "https://twitter.com/tongshuangwu",
     affliation: "University of Washington",
     webpage: "https://homes.cs.washington.edu/~wtshuang/",
     img: "sherry.png",
@@ -103,6 +107,7 @@ const organizers: People[] = [
   },
   {
     name: "Kenneth Holstein",
+    twitter: "https://twitter.com/d19fe8",
     affliation: "Carnegie Mellon University",
     webpage: "https://kenholstein.myportfolio.com/ke",
     img: "kenneth.png",
@@ -111,6 +116,7 @@ const organizers: People[] = [
   },
   {
     name: "Jessica Hullman",
+    twitter: "https://twitter.com/JessicaHullman",
     affliation: "Northwestern University",
     webpage: "http://users.eecs.northwestern.edu/~jhullman/",
     img: "jessica.png",
@@ -119,6 +125,7 @@ const organizers: People[] = [
   },
   {
     name: "Simone Stumpf",
+    twitter: "https://twitter.com/DrSimoneStumpf",
     affliation: "University of Glasgow",
     webpage: "https://www.gla.ac.uk/schools/computing/staff/simonestumpf/",
     img: "simone.png",
@@ -140,20 +147,24 @@ const cfp: CFP = {
   ],
   dates: [
     {
-      date: "February 24, 2022, 11:59 PM (Anywhere on Earth)",
-      type: "submission",
+      date: "February 11, 2022, 11:59 PM (Anywhere on Earth)",
+      type: "Submission",
       description:
         "Submission will be reviewed by program committee members, in a double-blind manner.",
     },
     {
-      date: "TBD",
-      type: "notification",
+      date: "March 11, 2022",
+      type: "Notification",
+    },
+    {
+      date: "April 1, 2022",
+      type: "Camera ready",
       description:
         "Accepted papers will be posted on the workshop website and shared via social media.",
     },
     {
       date: "TBD (between April 14-15 or April 30-May 6)",
-      type: "workshop",
+      type: "Workshop",
       description: "At least one author must register and attend the workshop.",
     },
   ],

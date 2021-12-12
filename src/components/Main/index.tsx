@@ -26,7 +26,7 @@ const Main = ({
   types: PageBlock[];
 }): ReactElement => {
   return (
-    <>
+    <div key={types.join("-")}>
       <LandingDiv overview={meta.overview} />
       <div className="app-main">
         {types.includes("about") && (
@@ -66,7 +66,7 @@ const Main = ({
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 export default Main;
