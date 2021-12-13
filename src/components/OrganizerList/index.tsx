@@ -15,8 +15,8 @@ const OrganizerEntry = ({ organizer }: { organizer: People }): ReactElement => {
           <Language className="iconlink" color="primary" fontSize="small" />
         </a>
       )}
-      {organizer.webpage && (
-        <a href={organizer.webpage}>
+      {organizer.twitter && (
+        <a href={organizer.twitter}>
           <Twitter className="iconlink" color="primary" fontSize="small" />
         </a>
       )}
