@@ -1,3 +1,5 @@
+import { Alert } from "@material-ui/lab";
+import { NavLink } from "react-router-dom";
 import { CFP, Metadata, People, Overview, Schedule } from "./Interfaces";
 const format = "documentclass [sigconf, review, anonymous] {acmart}";
 const overview: Overview = {
@@ -150,7 +152,7 @@ const cfp: CFP = {
       date: "February 11, 2022, 11:59 PM (Anywhere on Earth)",
       type: "Submission",
       description:
-        "Submission will be reviewed by program committee members, in a double-blind manner.",
+        "Submission will be reviewed by PC members, in a double-blind manner.",
     },
     {
       date: "March 11, 2022",
@@ -160,7 +162,7 @@ const cfp: CFP = {
       date: "April 1, 2022",
       type: "Camera ready",
       description:
-        "Accepted papers will be posted on the workshop website and shared via social media.",
+        "Accepted papers will be non-archival, and will be posted on this website & shared via social media.",
     },
     {
       date: "TBD (between April 14-15 or April 30-May 6)",

@@ -10,6 +10,8 @@ import ScheduleList from "../ScheduleList";
 import LandingDiv from "../Landing";
 import AboutDiv from "../About";
 import SpeakerList from "../Speaker";
+import { Alert } from "@material-ui/lab";
+import { NavLink } from "react-router-dom";
 
 export type PageBlock =
   | "cfp"
@@ -29,6 +31,23 @@ const Main = ({
     <div key={types.join("-")}>
       <LandingDiv overview={meta.overview} />
       <div className="app-main">
+        <Alert severity="warning" className="warning">
+          Please note that <b>ACCEPTED</b> submissions are required for
+          attendance.{" "}
+          {types.includes("cfp") ? (
+            <span>
+              Accepted papers are <b>NON-ARCHIVAL</b> and you can still submit
+              to other places!
+            </span>
+          ) : (
+            <span>
+              Do checkout our{" "}
+              <NavLink exact to={`/cfp`}>
+                Call for Papers!
+              </NavLink>
+            </span>
+          )}
+        </Alert>
         {types.includes("about") && (
           <div className="section">
             <div className="title">About</div>
