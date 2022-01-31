@@ -1,7 +1,7 @@
 import { Alert } from "@material-ui/lab";
 import { NavLink } from "react-router-dom";
 import { CFP, Metadata, People, Overview, Schedule } from "./Interfaces";
-const format = "documentclass [sigconf, review, anonymous] {acmart}";
+const format = "documentclass [manuscript, review, anonymous] {acmart}";
 const overview: Overview = {
   contact: "trait2022@easychair.org",
 
@@ -178,7 +178,7 @@ const cfp: CFP = {
     format: (
       <span>
         {" "}
-        ACM double column, 2-6 pages, fully anonymized. [
+        ACM <b>single</b> column, <b>2-10</b> pages, fully anonymized. [
         <a href="https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx">
           Word
         </a>
@@ -193,7 +193,7 @@ const cfp: CFP = {
         ] If you use latex, please use: <code>{format}</code>
       </span>
     ),
-    type: "position, summarize existing research, provide industry perspective, or in-progress works.",
+    type: 'Position paper; Summarize existing research; Provide industry perspective; In-progress work; "encore" submissions of highly-relevant conference/journal papers.',
   },
 };
 
@@ -205,7 +205,7 @@ const pcs = [
   { name: "Hal Daume III", affiliation: "University of Maryland" },
   { name: "Maria De-Arteaga", affiliation: "UT Austin" },
 
-  { name: "Krzystof Gajos", affiliation: "Harvard University" },
+  { name: "Krzysztof Gajos", affiliation: "Harvard University" },
   { name: "Elena Glassman", affiliation: "Harvard University" },
   { name: "Ella Glikson", affiliation: "Bar Ilan University" },
   { name: "Shi Feng", affiliation: "University of Maryland" },

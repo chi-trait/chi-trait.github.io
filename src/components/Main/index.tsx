@@ -37,7 +37,9 @@ const Main = ({
           {types.includes("cfp") ? (
             <span>
               Accepted papers are <b>NON-ARCHIVAL</b> and you can still submit
-              to other places!
+              to other places; We also welcome{" "}
+              <b>shortened, encore submission</b> of highly-relevant
+              conference/journal papers pubslished elsewhere!
             </span>
           ) : (
             <span>
