@@ -149,13 +149,26 @@ const cfp: CFP = {
   ],
   dates: [
     {
-      date: "February 11, 2022, 11:59 PM (Anywhere on Earth)",
+      date: (
+        <span>
+          <span
+            style={{
+              color: "#5f6368",
+              textDecoration: "line-through",
+              marginRight: "5px",
+            }}
+          >
+            February 11
+          </span>
+          <b>February 24</b>, 2022, 11:59 PM (Anywhere on Earth)
+        </span>
+      ),
       type: "Submission",
       description:
         "Submission will be reviewed by PC members, in a double-blind manner.",
     },
     {
-      date: "March 11, 2022",
+      date: "March 14, 2022",
       type: "Notification",
     },
     {
@@ -178,7 +191,8 @@ const cfp: CFP = {
     format: (
       <span>
         {" "}
-        ACM <b>single</b> column, <b>2-10</b> pages, fully anonymized. [
+        ACM <b>single</b> column, <b>2-10</b> pages, excluding references, fully
+        anonymized. [
         <a href="https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx">
           Word
         </a>

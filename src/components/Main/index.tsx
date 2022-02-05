@@ -45,8 +45,9 @@ const Main = ({
             <span>
               Do checkout our{" "}
               <NavLink exact to={`/cfp`}>
-                Call for Papers!
-              </NavLink>
+                Call for Papers
+              </NavLink>{" "}
+              -- The submission deadline is <b>EXTENDED</b>!
             </span>
           )}
         </Alert>
