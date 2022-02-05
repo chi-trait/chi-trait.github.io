@@ -27,7 +27,7 @@ const CFPText = ({ cfp }: { cfp: CFP }): ReactElement => {
         </Grid>
         <Grid item md={5} sm={12}>
           <div className="info-block">
-            <div className="info-title">Submssion format</div>
+            <div className="info-title">Submission format</div>
             <div className="row">
               <div className="row-key">Platform</div>
               <a className="row-value" href={cfp.submit.platform.url}>
