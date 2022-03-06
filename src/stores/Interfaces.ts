@@ -14,6 +14,9 @@ export interface People {
   affliation: string;
   twitter?: string;
 }
+export interface Speaker extends People {
+  type: "keynote" | "panelist";
+}
 
 export interface CFP {
   description: string;
@@ -61,7 +64,7 @@ export interface Overview {
 export interface Metadata {
   overview: Overview;
   organizers: People[];
-  speakers: People[];
+  speakers: Speaker[];
   cfp: CFP;
   pcs: ProgramCommittee[];
   schedule: Schedule[];

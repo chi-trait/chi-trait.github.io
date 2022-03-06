@@ -1,11 +1,11 @@
-import { Grid, Avatar, Divider } from "@material-ui/core";
+import { Grid, Avatar, Divider, Chip } from "@material-ui/core";
 import React, { ReactElement } from "react";
-import { People, PageIds } from "../../stores/Interfaces";
+import { People, PageIds, Speaker } from "../../stores/Interfaces";
 
 import "./styles.scss";
 import clsx from "clsx";
 
-const SpeakerEntry = ({ speaker }: { speaker: People }): ReactElement => {
+const SpeakerEntry = ({ speaker }: { speaker: Speaker }): ReactElement => {
   const [isSeeDescription, setIsSeeDescription] = React.useState(false);
   return (
     <div className="speaker">
@@ -16,7 +16,15 @@ const SpeakerEntry = ({ speaker }: { speaker: People }): ReactElement => {
       />
       <div>
         <b className="name">
-          <a href={speaker.webpage}>{speaker.name}</a>
+          <Chip
+            label={speaker.type}
+            color="primary"
+            size="small"
+            variant="outlined"
+          />
+          <a href={speaker.webpage} style={{ marginLeft: 10 }}>
+            {speaker.name}
+          </a>
         </b>
         , <i className="affiliation">{speaker.affliation}</i>
         <p>{speaker.description}</p>
@@ -25,7 +33,7 @@ const SpeakerEntry = ({ speaker }: { speaker: People }): ReactElement => {
   );
 };
 
-const SpeakerList = ({ speakers }: { speakers: People[] }): ReactElement => {
+const SpeakerList = ({ speakers }: { speakers: Speaker[] }): ReactElement => {
   return (
     <div className="speaker-list">
       {speakers.map((speaker) => (

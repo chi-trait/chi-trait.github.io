@@ -1,6 +1,13 @@
 import { Alert } from "@material-ui/lab";
 import { NavLink } from "react-router-dom";
-import { CFP, Metadata, People, Overview, Schedule } from "./Interfaces";
+import {
+  CFP,
+  Metadata,
+  People,
+  Overview,
+  Schedule,
+  Speaker,
+} from "./Interfaces";
 const format = "documentclass [manuscript, review, anonymous] {acmart}";
 const overview: Overview = {
   contact: "trait2022@easychair.org",
@@ -55,6 +62,11 @@ const overview: Overview = {
         HCI, AI, ML, psychology, and social science, or otherrelevant fields to
         foster closer communications and collaboration between multiple
         communities.
+      </p>
+      <p>
+        The workshop will be <b className="text-highlight">hybrid</b>.
+        Participants can choose to come to New Orleans or participant online
+        (details later).
       </p>
     </>
   ),
@@ -158,9 +170,8 @@ const cfp: CFP = {
               marginRight: "5px",
             }}
           >
-            February 11
+            February 24, 2022, 11:59 PM (Anywhere on Earth)
           </span>
-          <b>February 24</b>, 2022, 11:59 PM (Anywhere on Earth)
         </span>
       ),
       type: "Submission",
@@ -178,9 +189,10 @@ const cfp: CFP = {
         "Accepted papers will be non-archival, and will be posted on this website & shared via social media.",
     },
     {
-      date: "TBD (between April 14-15 or April 30-May 6)",
+      date: "April 30, 2022 (Hybrid)",
       type: "Workshop",
-      description: "At least one author must register and attend the workshop.",
+      description:
+        "At least one author must register and attend the hybrid workshop.",
     },
   ],
   submit: {
@@ -214,27 +226,45 @@ const cfp: CFP = {
 const pcs = [
   { name: "Zahra Ashkortab", affiliation: "IBM Research" },
   { name: "Michael Bernstein", affiliation: "Stanford University" },
-
+  { name: "Jim Chen", affiliation: "University of Washington" },
   { name: "Erin Chiou", affiliation: "ASU Adapt Lab" },
+  { name: "Ian Covert", affiliation: "University of Washington" },
+
   { name: "Hal Daume III", affiliation: "University of Maryland" },
   { name: "Maria De-Arteaga", affiliation: "UT Austin" },
+  { name: "Victor Dibia", affiliation: "Microsoft Research" },
+  { name: "Fan Du", affiliation: "Adobe Research" },
 
   { name: "Krzysztof Gajos", affiliation: "Harvard University" },
   { name: "Elena Glassman", affiliation: "Harvard University" },
   { name: "Ella Glikson", affiliation: "Bar Ilan University" },
+
   { name: "Shi Feng", affiliation: "University of Maryland" },
+
   { name: "Matthew Kay", affiliation: "Northwestern University" },
   { name: "Maia Jacobs", affiliation: "Northwestern University" },
   { name: "Alon Jacovi", affiliation: "Bar Ilan University" },
+  { name: "Joseph Janizek", affiliation: "University of Washington" },
+
+  { name: "Retno Larasati", affiliation: "The Open University" },
   { name: "Vera Liao", affiliation: "Microsoft Research" },
   { name: "Brian Lim", affiliation: "National University of Singapore" },
   { name: "Tim Miller", affiliation: "University of Melbourne" },
+  { name: "Hussein Mozannar", affiliation: "MIT" },
+  { name: "Ishan Nigam", affiliation: "UT Austin" },
+
+  { name: "Marissa Radensky", affiliation: "University of Washington" },
   { name: "Gonzalo Ramos", affiliation: "Microsoft Research" },
+
   { name: "Jenn Wortman Vaughan", affiliation: "Microsoft Research" },
+  { name: "Jakob Schoeffer", affiliation: "Karlsruhe Institute of Technology" },
   { name: "Ben Shneiderman", affiliation: "University of Maryland" },
   { name: "Tom Williams", affiliation: "Colorado School of Mines" },
   { name: "Michael Terry", affiliation: "Google Research" },
   { name: "Ming Yin", affiliation: "Purdue University" },
+
+  { name: "Tony Zhang", affiliation: "Fortiss" },
+  { name: "Joyce Zhoue", affiliation: "Columbia University" },
 ];
 
 export const schedule: Schedule[] = [
@@ -252,17 +282,22 @@ export const schedule: Schedule[] = [
   {
     start: "10:15",
     end: "10:45",
-    title: "Paper sessions 1",
+    title: "Paper session 1",
   },
   {
     start: "10:45",
+    end: "11:00",
+    title: "Coffee break",
+  },
+  {
+    start: "11:00",
     end: "11:30",
-    title: "Panel with experts that have diverse and well-balanced expertise",
+    title: "Paper session 2",
   },
   {
     start: "11:30",
     end: "12:00",
-    title: "Paper sessions 2",
+    title: "Poster session",
   },
   {
     start: "12:00",
@@ -271,13 +306,21 @@ export const schedule: Schedule[] = [
   },
   {
     start: "13:00",
-    end: "14:30",
-    title: "Group activity 1 (60 min discussion + 30 min group result sharing)",
+    end: "14:00",
+    title: "Group activity 1 (30 min discussion + 30 min group result sharing)",
   },
   {
-    start: "14:30",
+    start: "14:00",
+    end: "14:45",
+    title: "Panel with experts that have diverse and well-balanced expertise",
+    description:
+      "The panel will broadly address questions of theory, practice, and challenges in designing for appropriate trust and reliance in human-ai teams. Questions may get at where you see the current state of research in human-ai trust and reliance (are we still exploring in attempts to build theory, or have we identified consistent effects?), how to bridge research on human-ai trust with current practice to help developers or end-users, evaluation challenges specific to this topic, difficulties people face with reasoning under uncertainty/assessing model calibration, other challenges that arise in this area of research, etc. ",
+  },
+
+  {
+    start: "14:45",
     end: "15:00",
-    title: "Coffee break (concurrent with poster presentations)",
+    title: "Coffee break",
   },
   {
     start: "15:00",
@@ -287,19 +330,55 @@ export const schedule: Schedule[] = [
   {
     start: "16:30",
     end: "16:45",
-
     title: "Closing remarks",
   },
 ];
 
-const speakers = [
+const speakers: Speaker[] = [
   {
     name: "John D. Lee",
     affliation: "University of Wisconsin-Madison",
     webpage: "https://directory.engr.wisc.edu/ie/Faculty/Lee_John/",
     img: "john_lee.png",
+    type: "keynote",
     description:
       "Dr. John D. Lee is the Emerson Electric Professor at the University of Wisconsin-Madison. He investigates the issues of human-automation interaction, particularly trust in automation. John has investigated trust in domains that include UAVs, maritime operations, highly automated vehicles, and deep space exploration. His work also involves assessing interface and interaction methods to enhance trust calibration, as well as statistical approaches to assess trust and user state estimation. He helped to edit the Handbook of Cognitive Engineering, the APA Handbook of Human Systems Integration, and is also a co-author of a popular textbook: Designing for People: An introduction to human factors engineering. This research has been funded by NSF, ONR, NHTSA, NASA, Nissan, Toyota, and GM.",
+  },
+  {
+    name: "Saleema Amershi",
+    affliation: "Microsoft Research",
+    webpage: "https://www.microsoft.com/en-us/research/people/samershi/",
+    img: "saleema.jpg",
+    type: "panelist",
+    description:
+      "Dr. Saleema Amershi is a Senior Principal Research Manager at Microsoft Research where she leads the Human-AI eXperiences (HAX) team, building tools for creating responsible AI experiences. She also currently co-chairs Microsoft's Aether Working Group on Human-AI Interaction and Collaboration. Aether is Microsoft’s advisory committee on responsible and ethical AI. Her research focuses on helping people create effective and responsible AI user experiences. Her recent work includes leading Microsoft’s effort to develop general Guidelines for Human-AI Interaction, a unified and validated set of guidelines to establish a foundation for human-AI interaction Design. Throughout the years, she has developed tools and methodologies to support practitioners in designing and building AI-based products and services, including general purpose platforms and visualizations for data scientists building predictive models, and application specific techniques for supporting end-users interacting with AI-systems in their everyday lives.",
+  },
+  {
+    name: "Maria De-Arteaga",
+    type: "panelist",
+    affliation: "University of Texas at Austin",
+    webpage: "https://mariadearteaga.com/",
+    img: "maria_dearteaga.jpg",
+    description:
+      "Dr. Maria De-Arteaga is an Assistant Professor at the Information, Risk and Operation Management Department at the University of Texas at Austin, where she is also a core faculty member in the Machine Learning Laboratory and a Good Systems researcher. She holds a joint PhD in Machine Learning and Public Policy from Carnegie Mellon University. Her research focuses on the risks and opportunities of using machine learning to support experts’ decisions in high-stakes settings, with a particular interest in algorithmic fairness and human-AI collaboration. Her work has received best paper awards at WITS’21, NAACL’19 and Data for Policy’16, and research awards from Google and Microsoft Research.",
+  },
+  {
+    name: "Krzysztof Gajos",
+    type: "panelist",
+    affliation: "Harvard University",
+    webpage: "http://www.eecs.harvard.edu/~kgajos/",
+    img: "krzysztof.png",
+    description:
+      "Dr. Krzysztof Gajos is a Gordon McKay professor of Computer Science at the Harvard Paulson School of Engineering and Applied Sciences. Krzysztof’s current interests include 1. Principles and applications of intelligent interactive systems; 2. Tools and methods for behavioral research at scale (e.g., LabintheWild.org); and 3. Design for equity and social justice. He has also made contributions in the areas of accessible computing, creativity support tools, social computing, and health informatics. Prior to arriving at Harvard, Krzysztof was a postdoctoral researcher at Microsoft Research. He received his Ph.D. from the University of Washington and his M.Eng. and B.Sc. degrees from MIT. From 2013 to 2016 Krzysztof was a coeditor-in-chief of the ACM Transactions on Interactive Intelligent Systems (ACM TiiS), he was the general chair of ACM UIST 2017, and he is currently a program co-chair of the 2022 ACM Conference on Intelligent User Interfaces. His work was recognized with best paper awards at ACM CHI, ACM COMPASS, and ACM IUI. In 2019, he received the Most Impactful Paper Award at ACM IUI for his work on automatically generating personalized user interfaces.",
+  },
+  {
+    name: "Tim Miller",
+    type: "panelist",
+    affliation: "University of Melbourne",
+    webpage: "https://people.eng.unimelb.edu.au/tmiller/",
+    img: "tim_miller.png",
+    description:
+      "Dr. Tim Miller is a Professor in the School of Computing and Information Systems at The University of Melbourne, and Co-Director for the Centre of AI and Digital Ethics (CAIDE). His primary area of expertise is in artificial intelligence, with particular emphasis on Human-AI interaction and collaboration; Explainable Artificial Intelligence (XAI); Decision making in complex, multi-agent environments; and Reasoning about action and knowledge. His work is at the intersection of artificial intelligence, interaction design, and cognitive science/psychology. His areas of education expertise is in artificial intelligence, software engineering, and technology innovation. He has extensive experience developing novel and innovative solution with industry and defence collaborators.",
   },
 ];
 
