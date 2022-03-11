@@ -262,9 +262,8 @@ const pcs = [
   { name: "Tom Williams", affiliation: "Colorado School of Mines" },
   { name: "Michael Terry", affiliation: "Google Research" },
   { name: "Ming Yin", affiliation: "Purdue University" },
-
   { name: "Tony Zhang", affiliation: "Fortiss" },
-  { name: "Joyce Zhoue", affiliation: "Columbia University" },
+  { name: "Joyce Zhou", affiliation: "Cornell University" },
 ];
 
 export const schedule: Schedule[] = [
