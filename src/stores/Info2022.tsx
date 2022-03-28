@@ -183,7 +183,7 @@ const cfp: CFP = {
       type: "Notification",
     },
     {
-      date: "April 1, 2022",
+      date: "April 11, 2022",
       type: "Camera ready",
       description:
         "Accepted papers will be non-archival, and will be posted on this website & shared via social media.",
@@ -368,7 +368,7 @@ const speakers: Speaker[] = [
     webpage: "http://www.eecs.harvard.edu/~kgajos/",
     img: "krzysztof.png",
     description:
-      "Dr. Krzysztof Gajos is a Gordon McKay professor of Computer Science at the Harvard Paulson School of Engineering and Applied Sciences. Krzysztof’s current interests include 1. Principles and applications of intelligent interactive systems; 2. Tools and methods for behavioral research at scale (e.g., LabintheWild.org); and 3. Design for equity and social justice. He has also made contributions in the areas of accessible computing, creativity support tools, social computing, and health informatics. Prior to arriving at Harvard, Krzysztof was a postdoctoral researcher at Microsoft Research. He received his Ph.D. from the University of Washington and his M.Eng. and B.Sc. degrees from MIT. From 2013 to 2016 Krzysztof was a coeditor-in-chief of the ACM Transactions on Interactive Intelligent Systems (ACM TiiS), he was the general chair of ACM UIST 2017, and he is currently a program co-chair of the 2022 ACM Conference on Intelligent User Interfaces. His work was recognized with best paper awards at ACM CHI, ACM COMPASS, and ACM IUI. In 2019, he received the Most Impactful Paper Award at ACM IUI for his work on automatically generating personalized user interfaces.",
+      "Krzysztof Gajos is a Gordon McKay professor of Computer Science at the Harvard Paulson School of Engineering and Applied Sciences. Krzysztof’s current interests include 1. Principles and applications of intelligent interactive systems; 2. Tools and methods for behavioral research at scale (e.g., LabintheWild.org); and 3. Design for equity and social justice. He has also made contributions in the areas of accessible computing, creativity support tools, social computing, and health informatics. Prior to arriving at Harvard, Krzysztof was a postdoctoral researcher at Microsoft Research. He received his Ph.D. from the University of Washington and his M.Eng. and B.Sc. degrees from MIT. From 2013 to 2016 Krzysztof was a coeditor-in-chief of the ACM Transactions on Interactive Intelligent Systems (ACM TiiS), he was the general chair of ACM UIST 2017, and he is currently a program co-chair of the 2022 ACM Conference on Intelligent User Interfaces. His work was recognized with best paper awards at ACM CHI, ACM COMPASS, and ACM IUI. In 2019, his received the Most Impactful Paper Award at ACM IUI for his work on automatically generating personalized user interfaces.",
   },
   {
     name: "Tim Miller",
