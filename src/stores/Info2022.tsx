@@ -120,13 +120,13 @@ const organizers: People[] = [
       "refinement in model analysis.",
   },
   {
-    name: "Kenneth Holstein",
+    name: "Ken Holstein",
     twitter: "https://twitter.com/d19fe8",
     affliation: "Carnegie Mellon University",
-    webpage: "https://kenholstein.myportfolio.com/ke",
+    webpage: "https://www.thecoalalab.com/kenholstein",
     img: "kenneth.png",
     description:
-      "Kenneth is an Assistant Professor in Human-Computer Interaction at Carnegie Mellon University. His research interests lie at the intersection of HCI, AI, design, and cognitive science, focusing on the design, development, and evaluation of human-AI collaborative systems in complex social contexts.",
+      "Ken is an Assistant Professor in Human-Computer Interaction at Carnegie Mellon University. His research interests lie at the intersection of HCI, AI, design, and cognitive science, focusing on the design, development, and evaluation of human-AI collaborative systems in complex social contexts.",
   },
   {
     name: "Jessica Hullman",
